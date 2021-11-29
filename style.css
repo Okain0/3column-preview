@@ -1,0 +1,380 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+
+
+.main {
+    position: absolute;
+    top: 18%;
+    bottom: 18%;
+    left: 7%;
+    right: 7%;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0px auto;
+    max-width: 1100px;
+    padding: 0px 15px;
+}
+
+
+
+
+.column {
+    max-width: 33.333%; 
+    padding: 45px 45px 60px 45px;
+
+    box-shadow: 0px 0px 5px #333;
+}
+
+
+
+
+.column-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+
+
+.sedans {
+    max-width: 100%;  
+
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px;
+}
+
+
+
+
+.column-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+
+
+.suvs {
+    max-width: 100%;
+
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 10px;
+}
+
+
+
+
+.column-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+
+
+.luxury {
+    max-width: 100%;
+
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 10px;
+}
+
+
+
+
+.column p {
+    margin-bottom: 100px;
+}
+
+
+
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+
+
+
+/* Btn & Link */
+a {
+    text-decoration: none;
+}
+
+
+
+
+.learn-more {
+    padding: 13px 30px;
+
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 20px;
+}
+
+.learn-more:hover {
+    background-color: hsl(0, 1%, 83%);
+    box-shadow: 0px 0px 5px hsl(0, 1%, 83%);
+    color: #333;
+}
+
+
+
+
+
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+
+
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+
+
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+
+.attribution {
+    color: hsl(31, 77%, 52%);
+
+    position: relative;
+    bottom: -120px;
+    left: -105px;
+}
+
+
+
+
+.link {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* SEDANS/SUVS/LUXURY */
+.main-info {
+    top: 11%;
+}
+
+.head h1 {
+    margin: 0;
+}
+
+
+.sedans,
+.suvs,
+.luxury {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 25px 45px 10px 45px;
+}
+
+
+
+
+.info,
+.image {
+    max-width: 100%;
+}
+
+
+
+
+.info {
+    display: flex;
+}
+
+.image {
+    margin-left: 20px;
+}
+
+
+
+
+.image img {
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0px 0px 5px #333;
+
+}
+
+
+.btn {
+    position: relative;
+    bottom: 30px;
+}
+
+
+
+
+
+/* @@@ Media @@@ */
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+
+        font-size: 40px;
+
+        flex-direction: column;
+    }
+
+
+
+    .main {
+        top: 5%;
+    }
+
+
+
+    .column {
+        max-width: 100%;
+        padding: 80px 80px 100px;
+    }
+
+
+
+    .column-1 {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+
+
+    .column-3 {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+
+
+    .title {
+        font-size: 90px;
+    }
+
+
+
+    .icon {
+        transform: scale(2.3);
+        margin-left: 25px;
+    }
+
+
+
+    .learn-more {
+        padding: 27px 45px;
+        border-radius: 40px;
+    }
+
+
+
+    .attribution {
+        color: hsl(31, 77%, 52%);
+        font-size: 30px;
+        position: relative;
+        bottom: -10%;
+        left: -7%;
+    }
+
+    .sedans,
+    .suvs,
+    .luxury {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info p {
+        order: 2;
+    }
+
+    .head h1 {
+        margin: 10px 0px;
+    }
+
+    .image {
+        order: 1;
+    }
+
+    .image img {
+        min-width: 100%;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
