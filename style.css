@@ -141,6 +141,7 @@ a {
 
     background-color: hsl(0, 0%, 95%);
     border-radius: 20px;
+    transition: all 0.15s linear;
 }
 
 .learn-more:hover {
